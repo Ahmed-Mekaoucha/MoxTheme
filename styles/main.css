@@ -1,0 +1,168 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus {
+  outline: none; }
+
+p {
+  font-size: 18px; }
+
+.topFeed {
+  width: 100%;
+  min-height: 60px;
+  background: #363636; }
+  .topFeed .container {
+    min-height: 60px; }
+    .topFeed .container div {
+      float: left;
+      width: 50%; }
+      .topFeed .container div:first-of-type {
+        overflow: hidden; }
+        .topFeed .container div:first-of-type p {
+          color: #949596;
+          float: left; }
+          .topFeed .container div:first-of-type p:last-of-type {
+            font-weight: bold;
+            color: #949596;
+            position: relative;
+            padding: 20px 65px 20px 10px;
+            margin: 0 10px;
+            background: #2F2F2F;
+            font-size: 16px; }
+            .topFeed .container div:first-of-type p:last-of-type span {
+              color: #55C483; }
+              .topFeed .container div:first-of-type p:last-of-type span:last-of-type {
+                display: inline-block;
+                background: #363636;
+                color: #949596;
+                position: absolute;
+                top: 15px;
+                right: 10px;
+                padding: 5px 10px;
+                border-radius: 3px;
+                cursor: pointer;
+                transition: .4s ease-in-out;
+                transition-property: background, color; }
+                .topFeed .container div:first-of-type p:last-of-type span:last-of-type:hover {
+                  color: #FEFEFE;
+                  background: #949596; }
+      .topFeed .container div:last-of-type {
+        padding: 20px 10px;
+        text-align: right;
+        color: #949596; }
+        .topFeed .container div:last-of-type i {
+          padding: 0 10px;
+          transition: color .4s ease-in-out; }
+          .topFeed .container div:last-of-type i:hover {
+            color: #55C483;
+            cursor: pointer; }
+        .topFeed .container div:last-of-type a {
+          text-decoration: none;
+          color: #949596;
+          font-size: 18px;
+          transition: color .4s ease-in-out; }
+          .topFeed .container div:last-of-type a:first-of-type {
+            padding-left: 15px;
+            border-left: 1px solid #949596; }
+          .topFeed .container div:last-of-type a:hover {
+            color: #55C483; }
+        .topFeed .container div:last-of-type span {
+          padding: 0 10px; }
+
+nav {
+  width: 100%;
+  background: #FEFEFE;
+  border-bottom: 10px solid rgba(85, 196, 131, 0.7); }
+  nav .container {
+    min-height: 70px; }
+    nav .container h1 {
+      color: #2F2F2F;
+      margin: 14px auto;
+      float: left; }
+      nav .container h1 span {
+        display: inline-block;
+        position: relative;
+        bottom: 2px;
+        width: 13px;
+        height: 13px;
+        margin: auto 5px;
+        background: #FEFEFE;
+        border: 3px solid #55C483;
+        transform: rotate(-135deg); }
+    nav .container ul {
+      list-style-type: none;
+      margin: 0;
+      min-height: 70px;
+      float: left; }
+      nav .container ul li {
+        float: left; }
+        nav .container ul li a {
+          text-decoration: none;
+          color: #949596;
+          font-size: 20px;
+          padding: 0;
+          margin-right: 20px;
+          line-height: 70px; }
+    nav .container div {
+      position: relative;
+      float: right;
+      width: 30%;
+      min-height: 70px;
+      text-align: right; }
+      nav .container div i {
+        position: absolute;
+        top: 30px;
+        right: 54%;
+        color: #55C483;
+        cursor: pointer; }
+      nav .container div form {
+        display: none;
+        position: absolute;
+        padding: 0;
+        top: 58px;
+        left: -65px;
+        width: 70%;
+        height: 40px;
+        padding: 10px;
+        font-size: 20px;
+        background: #EDEDEE;
+        border-radius: 5px;
+        font-weight: bold; }
+        nav .container div form .search {
+          width: 100%;
+          height: 100%;
+          border: none;
+          background: transparent;
+          position: relative; }
+        nav .container div form span {
+          position: absolute;
+          top: -20px;
+          right: 10%;
+          display: block;
+          padding: 0;
+          margin: 0;
+          width: 0;
+          height: 0;
+          border-width: 10px 10px 10px 10px;
+          border-style: solid;
+          border-color: transparent transparent #EDEDEE transparent; }
+      nav .container div span {
+        display: inline-block;
+        padding: 15px 10px;
+        margin: 10px auto;
+        font-size: 20px;
+        color: #949596;
+        border-left: 1px solid #EDEDEE;
+        font-weight: 900;
+        font-family: "Font Awesome 5\ Free"; }
+
+/*Start Of My Frame Work*/
+.container {
+  width: 60%;
+  margin: auto; }
+
+.clear {
+  clear: both; }
+
+/*End Of My Frame Work*/

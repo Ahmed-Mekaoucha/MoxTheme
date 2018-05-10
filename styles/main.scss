@@ -1,0 +1,221 @@
+$language: "english";
+$dark: #363636;
+$green: #55C483;
+$white: #FEFEFE;
+$greenrg: rgba(85, 196, 131, .7);
+$darkgrey: #949596;
+$dareker: #2F2F2F;
+$lightgrey: #EDEDEE;
+$lightblue: #67B0D5;
+$redrg: rgba(195, 112, 99, .7);
+$float: '';
+@if $language == "english" {
+  $float: left;
+} @else {
+  $float: right;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus {outline: none;}
+p {font-size: 18px;}
+.topFeed {
+  width: 100%;
+  min-height: 60px;
+  background: $dark;
+  .container {
+    min-height: 60px;
+    div {
+      float: $float;
+      width: 50%;
+      &:first-of-type {
+        overflow: hidden;
+        p {
+          color: $darkgrey;
+          float: $float;
+          &:last-of-type {
+            font-weight: bold;
+            color: $darkgrey;
+            position: relative;
+            padding: 20px 65px 20px 10px;
+            margin: 0 10px;
+            background: $dareker;
+            font-size: 16px;
+            span {
+              color: $green;
+              &:last-of-type {
+                display: inline-block;
+                background: $dark;
+                color: $darkgrey;
+                position: absolute;
+                top: 15px;
+                right: 10px;
+                padding: 5px 10px;
+                border-radius: 3px;
+                cursor: pointer;
+                transition: .4s ease-in-out;
+                transition-property: background, color;
+                &:hover {
+                  color: $white;
+                  background: $darkgrey;
+                }
+              }
+            }
+          }
+        }
+      }
+      &:last-of-type {
+        padding: 20px 10px;
+        text-align: right;
+        color: $darkgrey;
+        i {
+          padding: 0 10px;
+          transition: color .4s ease-in-out;
+          &:hover {
+            color: $green;
+            cursor: pointer;
+          }
+        }
+        a {
+          text-decoration: none;
+          color: $darkgrey;
+          font-size: 18px;
+          transition: color .4s ease-in-out;
+          &:first-of-type {
+            padding-left: 15px;
+            border-left: 1px solid $darkgrey;
+          }
+          &:hover {
+            color: $green;
+          }
+        }
+        span {padding: 0 10px;}
+      }
+    }
+  }
+}
+
+nav {
+  width: 100%;
+  background: $white;
+  border-bottom: 10px solid $greenrg;
+  .container {
+    min-height: 70px;
+    h1 {
+      color: $dareker;
+      margin: 14px auto;
+      float: left;
+      span {
+        display: inline-block;
+        position: relative;
+        bottom: 2px;
+        width: 13px;
+        height: 13px;
+        margin: auto 5px;
+        background: $white;
+        border: 3px solid $green;
+        transform: rotate(-135deg);
+      }
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      min-height: 70px;
+      float: left;
+      li {
+        float: left;
+        a {
+          text-decoration: none;
+          color: $darkgrey;
+          font-size: 20px;
+          padding: 0;
+          margin-right: 20px;
+          line-height: 70px;
+        }
+      }
+    }
+    div {
+      position: relative;
+      float: right;
+      width: 30%;
+      min-height: 70px;
+      text-align: right;
+      i {
+        position: absolute;
+        top: 30px;
+        right: 54%;
+        color: $green;
+        cursor: pointer;
+      }
+      form {
+        display: none;
+        position: absolute;
+        padding: 0;
+        top: 58px;
+        left: -65px;
+        width: 70%;
+        height: 40px;
+        padding: 10px;
+        font-size: 20px;
+        background: $lightgrey;
+        border-radius: 5px;
+        font-weight: bold;
+        .search {
+          width: 100%;
+          height: 100%;
+          border: none;
+          background: transparent;
+          position: relative;
+        }
+        span {
+          position: absolute;
+          top: -20px;
+          right: 10%;
+          display: block;
+          padding: 0;
+          margin: 0;
+          width: 0;
+          height: 0;
+          border-width: 10px 10px 10px 10px;
+          border-style: solid;
+          border-color: transparent transparent $lightgrey transparent;
+        }
+      }
+      span {
+        display: inline-block;
+        padding: 15px 10px;
+        margin: 10px auto;
+        font-size: 20px;
+        color: $darkgrey;
+        border-left: 1px solid $lightgrey;
+        font-weight: 900;
+        font-family: "Font Awesome 5\ Free";
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Start Of My Frame Work*/
+.container {width: 60%; margin: auto;}
+.clear {clear: both;}
+/*End Of My Frame Work*/
