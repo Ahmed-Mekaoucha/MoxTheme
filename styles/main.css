@@ -2,12 +2,21 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background: #55C483; }
+
+::-webkit-scrollbar-thumb {
+  background: #363636;
+  height: 10px; }
+
 :focus {
   outline: none; }
 
 p {
   font-size: 18px; }
 
+/* Start Styling The Top Feed of The Website*/
 .topFeed {
   width: 100%;
   min-height: 60px;
@@ -70,6 +79,8 @@ p {
         .topFeed .container div:last-of-type span {
           padding: 0 10px; }
 
+/* End Styling The Top Feed of The Website*/
+/* Start Styling The navbar of The Website*/
 nav {
   width: 100%;
   background: #FEFEFE;
@@ -157,6 +168,206 @@ nav {
         font-weight: 900;
         font-family: "Font Awesome 5\ Free"; }
 
+/* End Styling The navbar of The Website*/
+/* Start Styling The Slider*/
+.slider {
+  width: 100%;
+  height: 72vh;
+  position: relative; }
+  .slider > div {
+    width: 100%;
+    height: 100%; }
+    .slider > div img {
+      width: 100%;
+      height: 100%;
+      opacity: .6; }
+    .slider > div div {
+      text-align: center;
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      color: #FEFEFE; }
+      .slider > div div h3 {
+        font: italic 30px arial, tahoma;
+        border-bottom: 1px solid #FEFEFE;
+        display: inline-block;
+        padding-bottom: 20px;
+        margin-bottom: 0; }
+      .slider > div div h1 {
+        font: normal bold 60px arial, tahoma;
+        text-transform: uppercase;
+        margin-bottom: 0; }
+      .slider > div div p {
+        font: normal 20px arial, tahoma; }
+      .slider > div div button {
+        padding: 20px 30px;
+        border: none;
+        background: #55C483;
+        border-radius: 5px;
+        color: #FEFEFE;
+        cursor: pointer;
+        margin: 30px auto;
+        font: normal 20px arial, tahoma; }
+    .slider > div::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      background: rgba(75, 75, 75, 0.3); }
+    .slider > div ul {
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      z-index: 2;
+      padding: 0;
+      list-style-type: none; }
+      .slider > div ul li {
+        display: inline-block;
+        padding: 5px;
+        margin: auto 5px;
+        cursor: pointer;
+        border: 3px solid #FEFEFE;
+        transform: rotate(45deg); }
+        .slider > div ul li.active {
+          border-color: #55C483; }
+
+.lpa {
+  text-align: center;
+  padding: 35px 0;
+  overflow: hidden;
+  min-height: 100vh; }
+  .lpa h1 {
+    display: inline-block;
+    position: relative;
+    color: #363636;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #949596; }
+    .lpa h1::after {
+      content: "";
+      display: block;
+      padding: 3px;
+      position: absolute;
+      bottom: -5px;
+      margin-left: -7.7px;
+      left: 50%;
+      border: 2px solid #55C483;
+      transform: rotate(45deg);
+      z-index: -1; }
+  .lpa .container {
+    min-height: 70vh;
+    padding: 40px 0;
+    cursor: pointer; }
+    .lpa .container div {
+      width: 20%;
+      text-align: center;
+      position: relative;
+      float: left; }
+      .lpa .container div figure {
+        margin: 0;
+        position: relative; }
+        .lpa .container div figure img {
+          width: 100%;
+          opacity: .7; }
+        .lpa .container div figure figcaption {
+          color: #55C483;
+          font-size: 18px;
+          text-transform: uppercase;
+          border-bottom: 1px solid #55C483;
+          display: inline-block;
+          padding-bottom: 5px; }
+        .lpa .container div figure:hover::before {
+          font-family: "Font Awesome 5\ Free";
+          font-weight: 400;
+          content: "\f004";
+          padding: 7px 7px 7px 12px;
+          position: absolute;
+          top: 10px;
+          left: -10px;
+          background: #949596;
+          color: #FEFEFE;
+          border-radius: 0 5px 5px 0; }
+        .lpa .container div figure:hover .like {
+          width: 0;
+          height: 0;
+          border-width: 10px 10px 10px 10px;
+          border-style: solid;
+          border-color: #363636 transparent transparent transparent;
+          position: absolute;
+          top: 32px;
+          left: -6px;
+          transform: rotate(-135deg);
+          z-index: -1; }
+        .lpa .container div figure:hover::after {
+          content: "+ Quwick view";
+          display: block;
+          width: 100%;
+          background: rgba(195, 112, 99, 0.7);
+          color: #FEFEFE;
+          text-transform: uppercase;
+          text-align: center;
+          position: absolute;
+          left: 0;
+          bottom: 30px;
+          padding: 20px 0;
+          cursor: pointer; }
+        .lpa .container div figure .sale {
+          display: none; }
+        .lpa .container div figure:hover .sale {
+          display: block;
+          padding: 5px 20px 5px 10px;
+          position: absolute;
+          top: 10px;
+          right: -10px;
+          background: #67B0D5;
+          border-radius: 5px 0 0 5px;
+          font-size: 20px;
+          color: #FEFEFE; }
+          .lpa .container div figure:hover .sale::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-width: 15px 15px 15px 15px;
+            border-style: solid;
+            border-color: #363636 transparent transparent transparent;
+            position: absolute;
+            top: 33px;
+            right: 0;
+            z-index: -1; }
+      .lpa .container div h3 {
+        color: #363636;
+        margin: 10px auto; }
+      .lpa .container div .oldp, .lpa .container div .newp {
+        display: block;
+        margin-top: 5px;
+        font-size: 20px;
+        color: #363636; }
+      .lpa .container div .oldp {
+        text-decoration: line-through;
+        color: #949596; }
+      .lpa .container div:hover::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -22px;
+        left: -22px;
+        width: calc(100% + 40px);
+        height: calc(100% + 40px);
+        border: 2px solid #55C483; }
+      .lpa .container div:not(:last-of-type) {
+        margin-right: 40px; }
+      .lpa .container div:hover img {
+        opacity: 1; }
+  .lpa hr {
+    border-color: #EDEDEE;
+    border-width: .7px; }
+
+/* End Styling The Slider*/
 /*Start Of My Frame Work*/
 .container {
   width: 60%;
