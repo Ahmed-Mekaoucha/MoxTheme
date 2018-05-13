@@ -3,11 +3,11 @@ $green: #55C483;
 $white: #FEFEFE;
 $greenrg: rgba(85, 196, 131, .7);
 $darkgrey: #949596;
-$dareker: #2F2F2F;
+$dareker: #363636;
+$verydark: #2F2F2F;
 $lightgrey: #EDEDEE;
 $lightblue: #67B0D5;
 $redrg: rgba(195, 112, 99, .7);
-$float: '';
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -44,7 +44,7 @@ p {font-size: 18px;}
             position: relative;
             padding: 20px 65px 20px 10px;
             margin: 0 10px;
-            background: $dareker;
+            background: $verydark;
             font-size: 16px;
             span {
               color: $green;
@@ -419,11 +419,6 @@ nav {
       }
     }
   }
-  hr {
-    border-color: $lightgrey;
-    border-width: .7px;
-    margin: 50px auto;
-  }
 }
 
 .bsa {
@@ -578,34 +573,163 @@ nav {
     }
   }
 }
-
-
-
-
-
-
-
 /* End Styling The Slider*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Start Styling The Footer*/
+footer {
+  background: $dareker;
+  overflow: hidden;
+  padding: 30px 0 0;
+  .container {
+    overflow: hidden;
+    > div {
+      float: left;
+      width: calc(96% / 4);
+      > div {
+        h1 {
+          color: $white;
+          display: inline-block;
+          margin-right: 10%;
+          cursor: pointer;
+          span {
+            display: inline-block;
+            border: 2px solid $green;
+            padding: 5px;
+            transform: rotate(45deg);
+            margin: 5px;
+            position: relative;
+            top: 3px;
+          }
+          &::after {
+            content: "";
+            display: block;
+            width: 1.7em;
+            height: 1px;
+            margin-top: 10px;
+            background: $darkgrey;
+          }
+        }
+        i {
+          color: $darkgrey;
+          cursor: pointer;
+          transition: color .7s ease-in-out;
+          &:not(:last-of-type) {
+            margin-right: 10px;
+          }
+          &:hover {
+            color: $green;
+          }
+        }
+      }
+      p {
+        color: $darkgrey;
+        line-height: 1.7;
+      }
+      &:not(:last-of-type) {
+        margin-right: calc(4% / 3);
+      }
+      h2 {
+        margin-top: 30px;
+        color: $green;
+        &::after {
+          content: "";
+          display: block;
+          width: 1.7em;
+          height: 1px;
+          margin-top: 10px;
+          background: $darkgrey;
+        }
+      }
+      form {
+        input {
+          display: block;
+          width: 100%;
+          padding: 15px;
+          border-radius: 5px;
+          border: 0;
+          margin-top: 10px;
+          font-size: 20px;
+          color: $darkgrey;
+          &:last-of-type {
+            background: $lightblue;
+            color: $lightgrey;
+          }
+        }
+      }
+    }
+    ul {
+      list-style-type: none;
+      margin: 30px 0 0 0;
+      padding: 0;
+      li {
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 16px;
+          color: $darkgrey;
+          border-bottom: 1px solid $darkgrey;
+          padding: 10px 0;
+          display: block;
+          position: relative;
+          &.active, &:hover {
+            color: $green;
+            border-color: $green;
+          }
+          &::after {
+            font-weight: 900;
+            font-family: "Font Awesome 5\ Free";
+            content: "\f105";
+            color: inherit;
+            position: absolute;
+            top: 15%;
+            right: 0;
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+}
+.bf {
+  overflow: hidden;
+  padding: 10px 0;
+  background: $verydark;
+  margin-top: 30px;
+  .container {
+    overflow: hidden;
+    p {
+      float: left;
+      color: $darkgrey;
+      transition: color .4s ease-in-out;
+      &:hover {
+        color: $white;
+      }
+    }
+    i {
+      float: right;
+      background: $dareker;
+      padding: 10px;
+      border-radius: 50%;
+      color: $darkgrey;
+      cursor: pointer;
+      transition: color .4s ease-in-out;
+      &:hover {
+        color: $white;
+      }
+    }
+    a {
+      color: $darkgrey;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color .4s ease-in-out;
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+}
+/* End Styling The Footer*/
 /*Start Of My Frame Work*/
 .container {width: 70%; margin: auto;}
 .clear {clear: both;}
+hr {border-color: $lightgrey;border-width: .7px;margin: 50px auto;border-style: solid;}
 /*End Of My Frame Work*/

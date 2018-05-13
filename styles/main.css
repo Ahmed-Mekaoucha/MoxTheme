@@ -88,7 +88,7 @@ nav {
   nav .container {
     min-height: 70px; }
     nav .container h1 {
-      color: #2F2F2F;
+      color: #363636;
       margin: 14px auto;
       float: left; }
       nav .container h1 span {
@@ -363,10 +363,6 @@ nav {
         margin-right: calc(11% / 3); }
       .lpa .container div:hover img {
         opacity: 1; }
-  .lpa hr {
-    border-color: #EDEDEE;
-    border-width: .7px;
-    margin: 50px auto; }
 
 .bsa {
   padding: 50px 0 0; }
@@ -491,6 +487,129 @@ nav {
         opacity: 1; }
 
 /* End Styling The Slider*/
+/* Start Styling The Footer*/
+footer {
+  background: #363636;
+  overflow: hidden;
+  padding: 30px 0 0; }
+  footer .container {
+    overflow: hidden; }
+    footer .container > div {
+      float: left;
+      width: calc(96% / 4); }
+      footer .container > div > div h1 {
+        color: #FEFEFE;
+        display: inline-block;
+        margin-right: 10%;
+        cursor: pointer; }
+        footer .container > div > div h1 span {
+          display: inline-block;
+          border: 2px solid #55C483;
+          padding: 5px;
+          transform: rotate(45deg);
+          margin: 5px;
+          position: relative;
+          top: 3px; }
+        footer .container > div > div h1::after {
+          content: "";
+          display: block;
+          width: 1.7em;
+          height: 1px;
+          margin-top: 10px;
+          background: #949596; }
+      footer .container > div > div i {
+        color: #949596;
+        cursor: pointer;
+        transition: color .7s ease-in-out; }
+        footer .container > div > div i:not(:last-of-type) {
+          margin-right: 10px; }
+        footer .container > div > div i:hover {
+          color: #55C483; }
+      footer .container > div p {
+        color: #949596;
+        line-height: 1.7; }
+      footer .container > div:not(:last-of-type) {
+        margin-right: calc(4% / 3); }
+      footer .container > div h2 {
+        margin-top: 30px;
+        color: #55C483; }
+        footer .container > div h2::after {
+          content: "";
+          display: block;
+          width: 1.7em;
+          height: 1px;
+          margin-top: 10px;
+          background: #949596; }
+      footer .container > div form input {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        border-radius: 5px;
+        border: 0;
+        margin-top: 10px;
+        font-size: 20px;
+        color: #949596; }
+        footer .container > div form input:last-of-type {
+          background: #67B0D5;
+          color: #EDEDEE; }
+    footer .container ul {
+      list-style-type: none;
+      margin: 30px 0 0 0;
+      padding: 0; }
+      footer .container ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #949596;
+        border-bottom: 1px solid #949596;
+        padding: 10px 0;
+        display: block;
+        position: relative; }
+        footer .container ul li a.active, footer .container ul li a:hover {
+          color: #55C483;
+          border-color: #55C483; }
+        footer .container ul li a::after {
+          font-weight: 900;
+          font-family: "Font Awesome 5\ Free";
+          content: "\f105";
+          color: inherit;
+          position: absolute;
+          top: 15%;
+          right: 0;
+          font-size: 1.2em; }
+
+.bf {
+  overflow: hidden;
+  padding: 10px 0;
+  background: #2F2F2F;
+  margin-top: 30px; }
+  .bf .container {
+    overflow: hidden; }
+    .bf .container p {
+      float: left;
+      color: #949596;
+      transition: color .4s ease-in-out; }
+      .bf .container p:hover {
+        color: #FEFEFE; }
+    .bf .container i {
+      float: right;
+      background: #363636;
+      padding: 10px;
+      border-radius: 50%;
+      color: #949596;
+      cursor: pointer;
+      transition: color .4s ease-in-out; }
+      .bf .container i:hover {
+        color: #FEFEFE; }
+    .bf .container a {
+      color: #949596;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color .4s ease-in-out; }
+      .bf .container a:hover {
+        color: #55C483; }
+
+/* End Styling The Footer*/
 /*Start Of My Frame Work*/
 .container {
   width: 70%;
@@ -498,5 +617,11 @@ nav {
 
 .clear {
   clear: both; }
+
+hr {
+  border-color: #EDEDEE;
+  border-width: .7px;
+  margin: 50px auto;
+  border-style: solid; }
 
 /*End Of My Frame Work*/

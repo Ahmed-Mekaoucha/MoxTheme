@@ -51,4 +51,28 @@ $(document).ready(function () {
     $('.lpa .container > div').css({
       minHeight: divHeight
     });
+    
+    /*-------------------------------------------------*/
+    //                   Scoll top button               /
+    /*-------------------------------------------------*/
+    $('.fa-arrow-up').on('click', function () {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 1500);
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
