@@ -278,9 +278,9 @@ nav {
 
 .lpa {
   text-align: center;
-  padding: 35px 0;
+  padding: 35px 0 0;
   overflow: hidden;
-  min-height: 100vh;
+  min-height: 90vh;
   h1 {
     display: inline-block;
     position: relative;
@@ -297,15 +297,15 @@ nav {
       left: 50%;
       border: 2px solid $green;
       transform: rotate(45deg);
-      z-index: -1;
+      background: $white;
     }
   }
   .container {
-    min-height: 70vh;
+    min-height: 700px;
     padding: 40px 0;
     cursor: pointer;
     div {
-      width: 20%;
+      width: calc(89% / 4);
       text-align: center;
       position: relative;
       float: left;
@@ -316,6 +316,7 @@ nav {
           width: 100%;
           opacity: .7;
         }
+
         figcaption {
           color: $green;
           font-size: 18px;
@@ -412,7 +413,7 @@ nav {
         height: calc(100% + 40px);
         border: 2px solid $green;
       }
-      &:not(:last-of-type) {margin-right: 40px;}
+      &:not(:last-of-type) {margin-right: calc(11% / 3);}
       &:hover img {
         opacity: 1;
       }
@@ -421,11 +422,162 @@ nav {
   hr {
     border-color: $lightgrey;
     border-width: .7px;
+    margin: 50px auto;
+  }
+}
+
+.bsa {
+  padding: 50px 0 0;
+  .container {
+    overflow: hidden;
+    > div {
+      width: calc(96% / 3);
+      float: left;
+      h2 {
+        color: $dark;
+        display: inline-block;
+        span {
+          width: 1.7em;
+          height: 2px;
+          margin-top: 10px;
+          background: $green;
+          display: block;
+          position: relative;
+          &::after {
+            content: "";
+            background: $white;
+            display: block;
+            position: absolute;
+            top: -4px;
+            left: 50%;
+            margin-left: -4.5px;
+            padding: 3px;
+            border: 2px solid $green;
+            transform: rotate(45deg);
+          }
+        }
+      }
+      div {
+        overflow: hidden;
+        margin-bottom: 40px;
+        cursor: pointer;
+        img {
+          float: left;
+          margin-right: 10px;
+          opacity: .6;
+          &:hover {
+            opacity: 1;
+          }
+        }
+        h3 {
+          margin: 0;
+          color: $green;
+          text-transform: uppercase;
+          position: relative;
+          display: inline-block;
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: $green;
+          }
+        }
+        p {
+          margin-bottom: 10px;
+          color: $dark;
+        }
+        span {
+          color: $darkgrey;
+          font-size: 20px;
+          &:first-of-type {
+            text-decoration: line-through;
+          }
+          &:last-of-type {
+            color: $dark;
+          }
+        }
+      }
+      &:not(:last-of-type) {
+        margin-right: calc(4% / 2);
+      }
+    }
   }
 }
 
 
-
+.lb {
+  text-align: center;
+  padding: 60px 0;
+  h1 {
+    color: $dark;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 60px;
+    margin-top: 0;
+    span {
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: $green;
+      position: absolute;
+      bottom: -10px;
+    }
+    &::after {
+      content: "";
+      display: block;
+      padding: 3px;
+      position: absolute;
+      bottom: -14px;
+      left: 50%;
+      margin-left: -3px;
+      background: $white;
+      border: 2px solid green;
+      transform: rotate(45deg);
+    }
+  }
+  .container {
+    text-align: center;
+    overflow: hidden;
+    div {
+      cursor: pointer;
+      width: calc(94% / 3);
+      color: $darkgrey;
+      float: left;
+      img {
+        width: 100%;
+        opacity: .7;
+      }
+      h3 {
+        &::after {
+          content: "";
+          width: 2.7em;
+          height: 1px;
+          display: block;
+          margin: 15px auto;
+          background: $green;
+        }
+      }
+      p {
+        text-align: justify;
+      }
+      span {
+        color: $green;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+      &:not(:last-of-type) {
+        margin-right: calc(6% / 2);
+      }
+      &:hover img {
+        opacity: 1;
+      }
+    }
+  }
+}
 
 
 
@@ -454,6 +606,6 @@ nav {
 
 
 /*Start Of My Frame Work*/
-.container {width: 60%; margin: auto;}
+.container {width: 70%; margin: auto;}
 .clear {clear: both;}
 /*End Of My Frame Work*/

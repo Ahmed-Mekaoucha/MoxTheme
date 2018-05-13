@@ -238,9 +238,9 @@ nav {
 
 .lpa {
   text-align: center;
-  padding: 35px 0;
+  padding: 35px 0 0;
   overflow: hidden;
-  min-height: 100vh; }
+  min-height: 90vh; }
   .lpa h1 {
     display: inline-block;
     position: relative;
@@ -257,13 +257,13 @@ nav {
       left: 50%;
       border: 2px solid #55C483;
       transform: rotate(45deg);
-      z-index: -1; }
+      background: #FEFEFE; }
   .lpa .container {
-    min-height: 70vh;
+    min-height: 700px;
     padding: 40px 0;
     cursor: pointer; }
     .lpa .container div {
-      width: 20%;
+      width: calc(89% / 4);
       text-align: center;
       position: relative;
       float: left; }
@@ -360,17 +360,140 @@ nav {
         height: calc(100% + 40px);
         border: 2px solid #55C483; }
       .lpa .container div:not(:last-of-type) {
-        margin-right: 40px; }
+        margin-right: calc(11% / 3); }
       .lpa .container div:hover img {
         opacity: 1; }
   .lpa hr {
     border-color: #EDEDEE;
-    border-width: .7px; }
+    border-width: .7px;
+    margin: 50px auto; }
+
+.bsa {
+  padding: 50px 0 0; }
+  .bsa .container {
+    overflow: hidden; }
+    .bsa .container > div {
+      width: calc(96% / 3);
+      float: left; }
+      .bsa .container > div h2 {
+        color: #363636;
+        display: inline-block; }
+        .bsa .container > div h2 span {
+          width: 1.7em;
+          height: 2px;
+          margin-top: 10px;
+          background: #55C483;
+          display: block;
+          position: relative; }
+          .bsa .container > div h2 span::after {
+            content: "";
+            background: #FEFEFE;
+            display: block;
+            position: absolute;
+            top: -4px;
+            left: 50%;
+            margin-left: -4.5px;
+            padding: 3px;
+            border: 2px solid #55C483;
+            transform: rotate(45deg); }
+      .bsa .container > div div {
+        overflow: hidden;
+        margin-bottom: 40px;
+        cursor: pointer; }
+        .bsa .container > div div img {
+          float: left;
+          margin-right: 10px;
+          opacity: .6; }
+          .bsa .container > div div img:hover {
+            opacity: 1; }
+        .bsa .container > div div h3 {
+          margin: 0;
+          color: #55C483;
+          text-transform: uppercase;
+          position: relative;
+          display: inline-block; }
+          .bsa .container > div div h3::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: #55C483; }
+        .bsa .container > div div p {
+          margin-bottom: 10px;
+          color: #363636; }
+        .bsa .container > div div span {
+          color: #949596;
+          font-size: 20px; }
+          .bsa .container > div div span:first-of-type {
+            text-decoration: line-through; }
+          .bsa .container > div div span:last-of-type {
+            color: #363636; }
+      .bsa .container > div:not(:last-of-type) {
+        margin-right: calc(4% / 2); }
+
+.lb {
+  text-align: center;
+  padding: 60px 0; }
+  .lb h1 {
+    color: #363636;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 60px;
+    margin-top: 0; }
+    .lb h1 span {
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #55C483;
+      position: absolute;
+      bottom: -10px; }
+    .lb h1::after {
+      content: "";
+      display: block;
+      padding: 3px;
+      position: absolute;
+      bottom: -14px;
+      left: 50%;
+      margin-left: -3px;
+      background: #FEFEFE;
+      border: 2px solid green;
+      transform: rotate(45deg); }
+  .lb .container {
+    text-align: center;
+    overflow: hidden; }
+    .lb .container div {
+      cursor: pointer;
+      width: calc(94% / 3);
+      color: #949596;
+      float: left; }
+      .lb .container div img {
+        width: 100%;
+        opacity: .7; }
+      .lb .container div h3::after {
+        content: "";
+        width: 2.7em;
+        height: 1px;
+        display: block;
+        margin: 15px auto;
+        background: #55C483; }
+      .lb .container div p {
+        text-align: justify; }
+      .lb .container div span {
+        color: #55C483;
+        font-size: 18px;
+        text-transform: uppercase; }
+      .lb .container div:not(:last-of-type) {
+        margin-right: calc(6% / 2); }
+      .lb .container div:hover img {
+        opacity: 1; }
 
 /* End Styling The Slider*/
 /*Start Of My Frame Work*/
 .container {
-  width: 60%;
+  width: 70%;
   margin: auto; }
 
 .clear {
